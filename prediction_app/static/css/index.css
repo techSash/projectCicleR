@@ -1,0 +1,165 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+}
+
+.hero_section {
+  height: 70vh;
+  z-index: 10;
+  position: relative;
+}
+
+.blob1 {
+  height: 200px;
+  transform: scale(4);
+  position: absolute;
+  left: 0;
+  margin: 150px 0px 0px 100px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.blob2 {
+  height: 200px;
+  transform: scale(10) rotate(0deg);
+  position: absolute;
+  right: 0;
+  margin: -100px -200px 0px 0px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.title {
+  font-size: 5em;
+  font-weight: 100;
+  margin: 200px 0px 0px 0px;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 25px 100px 50px 100px;
+  text-align: center;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.primary_button,
+.secondary_button {
+  padding: 20px;
+  width: 400px;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0px 10px;
+}
+
+.about_project_section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  margin-bottom: 200px;
+  z-index: 10;
+}
+
+.about_section_title {
+  margin: 0px 0px 100px 0px;
+  font-size: 2em;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.card {
+  width: 25rem;
+  height: 30rem;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0px 50px;
+  transition: 1s;
+}
+
+.card-img-top {
+  width: 20rem;
+  height: auto;
+}
+
+.prediction_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 10;
+  background-color: #a7f0ba;
+  border-radius: 5px;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.prediction_subtitle {
+    text-align: center;
+}
+
+#yourBtn {
+  margin-top: 50px;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.model_form_button {
+  height: 50px;
+  background-color: #0D3B66;
+  color: #ffffff;
+}
+
+.model_form_button:hover {
+    background-color: #0b2a48;
+    color: #ffffff;
+}
+
+
+.loading_gif_container {
+  display: none;
+}
+
+#loader {
+  height: auto;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result_container {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.result {
+  font-size: 4em;
+  text-align: center;
+}
+
+#status {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+    padding: 80px 0px 80px 0px;
+    /* height: 200px; */
+    width: 100%;
+    text-align: center;
+}
