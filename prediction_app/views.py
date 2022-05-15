@@ -13,18 +13,13 @@ def index(request):
 def handle_image_upload(request):
     if request.method == 'POST':
 
-        print('the form was submitted successfully')
-        
         myfile = request.FILES['image_input']
         if ('.png' in str(myfile)) or ('.jpg' in str(myfile)) or ('.jpeg' in str(myfile)):
             fs = FileSystemStorage()
             filename = fs.save(myfile.name, myfile)
             uploaded_file_url = fs.url(filename)
-
-            print(os.listdir('./media/'))
             
             prediction = deeplearning.use_model(uploaded_file_url)
-            print(prediction)
             
             json_data = {'prediction': prediction, 'status': 'success'}
         

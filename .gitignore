@@ -9,3 +9,5 @@
 *.rar
 *.tar
 *.zip
+*.pyc
+*.pyc?

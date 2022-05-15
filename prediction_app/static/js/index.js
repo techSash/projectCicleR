@@ -48,5 +48,8 @@ $(function () {
 })
 
 $(document).ready(function() {
-    console.log("the page has loaded")
+    $('.primary_button').click(function () {
+        $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+        return false;
+    });
 })
