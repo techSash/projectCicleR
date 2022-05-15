@@ -32,12 +32,7 @@ body {
 .title {
   font-size: 5em;
   font-weight: 100;
-  margin: 200px 0px 0px 0px;
-  text-align: center;
-}
-
-.subtitle {
-  margin: 25px 100px 50px 100px;
+  margin: 200px 0px 50px 0px;
   text-align: center;
 }
 
@@ -101,7 +96,7 @@ body {
 }
 
 .prediction_subtitle {
-    text-align: center;
+  text-align: center;
 }
 
 #yourBtn {
@@ -115,15 +110,14 @@ body {
 
 .model_form_button {
   height: 50px;
-  background-color: #0D3B66;
+  background-color: #0d3b66;
   color: #ffffff;
 }
 
 .model_form_button:hover {
-    background-color: #0b2a48;
-    color: #ffffff;
+  background-color: #0b2a48;
+  color: #ffffff;
 }
-
 
 .loading_gif_container {
   display: none;
@@ -138,7 +132,7 @@ body {
 }
 
 .result_container {
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
@@ -155,11 +149,289 @@ body {
   margin-bottom: 50px;
 }
 
-
 footer {
-    background-color: #f4f4f4;
-    padding: 80px 0px 80px 0px;
-    /* height: 200px; */
+  background-color: #f4f4f4;
+  padding: 80px 0px 80px 0px;
+  /* height: 200px; */
+  width: 100%;
+  text-align: center;
+}
+
+/* responsive code */
+
+@media only screen and (min-width: 250px) {
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .hero_section {
+    height: 80vh;
+    z-index: 10;
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .title {
+    font-size: 2.2em;
+    margin: 200px 0px 50px 0px;
+  }
+
+  .blob1 {
+    height: 200px;
+    transform: scale(3);
+    position: absolute;
+    left: 0;
+    margin: 0px 0px 0px -100px;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  .blob2 {
+    height: 200px;
+    transform: scale(5) rotate(0deg);
+    position: absolute;
+    right: 0;
+    margin: -300px -150px 0px 0px;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  .button_container {
+    display: block;
+    justify-content: center;
+  }
+
+  .primary_button,
+  .secondary_button {
+    padding: 10px;
     width: 100%;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 0px;
+  }
+
+  .about_project_section {
+    height: 100vh;
+    margin-bottom: 700px;
+    z-index: 10;
+  }
+
+  .about_section_title {
+    margin: 0px 50px 100px 50px;
+    font-size: 2em;
     text-align: center;
+  }
+
+  .card {
+    margin: 0px 0px 30px 50px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero_section {
+    height: 90vh;
+    z-index: 10;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .title {
+    font-size: 3em;
+    margin: 200px 0px 50px 0px;
+  }
+
+  .primary_button,
+  .secondary_button {
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 0px;
+  }
+
+  .about_project_section {
+    height: 100vh;
+    margin-bottom: 700px;
+    z-index: 10;
+  }
+
+  .about_section_title {
+    margin: 0px 50px 100px 50px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .card {
+    width: 25rem;
+    height: 30rem;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px 0px 30px 100px;
+    transition: 1s;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .card {
+    width: 25rem;
+    height: 30rem;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px 0px 30px 110px;
+    transition: 1s;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .card {
+    width: 25rem;
+    height: 30rem;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px 0px 30px 180px;
+    transition: 1s;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .hero_section {
+    height: 80vh;
+  }
+
+  .button_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .primary_button,
+  .secondary_button {
+    padding: 10px;
+    width: 400px;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 30px;
+  }
+
+  .about_project_section {
+    height: 100vh;
+    margin-bottom: 700px;
+    z-index: 10;
+  }
+
+  .card {
+    width: 25rem;
+    height: 30rem;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px 0px 30px 200px;
+    transition: 1s;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .card {
+    width: 25rem;
+    height: 30rem;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px 0px 30px 220px;
+    transition: 1s;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .card {
+    width: 25rem;
+    height: 30rem;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px 0px 30px 250px;
+    transition: 1s;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero_section {
+    height: 90vh;
+  }
+
+  .title {
+    font-size: 3.2em;
+    margin: 200px 0px 50px 0px;
+  }
+
+  .primary_button,
+  .secondary_button {
+    padding: 30px;
+    width: 400px;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 30px;
+  }
+
+  .about_project_section {
+    height: 10vh;
+    margin-bottom: 700px;
+    z-index: 10;
+  }
+
+  .card {
+    width: 20rem;
+    height: 25rem;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px 0px 30px 10px;
+    transition: 1s;
+  }
+
+  .card-img-top {
+    width: 15rem;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .blob1 {
+    height: 200px;
+    transform: scale(4);
+    position: absolute;
+    left: 0;
+    margin: 350px 0px 0px 100px;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  
+  .blob2 {
+    height: 200px;
+    transform: scale(10) rotate(0deg);
+    position: absolute;
+    right: 0;
+    margin: -100px -500px 0px 0px;
+    opacity: 0.3;
+    z-index: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+
+  .title {
+    font-size: 4em;
+    margin: 200px 0px 50px 0px;
+  }
+
+  .card {
+    width: 25rem;
+    height: 30rem;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px 0px 30px 10px;
+    transition: 1s;
+  }
+
+  .card-img-top {
+    width: 20rem;
+    height: auto;
+  }
 }
