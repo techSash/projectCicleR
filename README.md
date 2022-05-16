@@ -1,16 +1,16 @@
 # projectCicleR
 
-### In collaboration with Dhruv Hariharan
+## In collaboration with Dhruv Hariharan
 
-This github repository contains all the code for our projectCicleR. This project focuses on ting a solution to reducing waste from the ladfills by segregating organic and recyclable garbage with the help of Computer vision and IoT. 
+## Introduction
+
+This github repository contains all the code for our projectCicleR. This project focuses on a solution to reducing waste from the landfills by segregating organic and recyclable garbage with the help of Computer vision and IoT. 
+
+## Webapp
 
 We also built a webapp for easy access to the deep mearning model. The web app is accessible at http://projectcicler.pythonanywhere.com/
 
-For segregating the waste, we built a Convolutional Neural Network with three convolutional layers and three layers in the feed forward network. Even though this is a simple model, we were able to achieve a raw accuracy of 88%. 
-
-For the dataset, we scraped images from the internet of organic and recyclable waste. The dataset contains 22564 training set and 2513 validation set. The dataset can be accessed from [this link](https://www.kaggle.com/datasets/techsash/waste-classification-data)
-
-This repository also contains the code for the webapp which was built using django. To set up the webapp in your local system, clone this repository and install the requirements in the requirements.txt. 
+This repository also contains the code for the same which was built using django. To set up the webapp in your local system, clone this repository and install the requirements in the <b>requirements.txt</b>.
 
 Some of the major requirements for the webapp are 
 1. Django
@@ -29,4 +29,20 @@ get_random_secret_key()
 
 The generated key can then be stored inside core/.env (Please create this file in the specified directory)
 
-You can also access the script for building the model we used under this scripts folder. 
+## CNN Model explained
+
+For segregating the waste, we built a Convolutional Neural Network with three convolutional layers and three layers in the feed forward network. Even though this is a simple model, we were able to achieve a raw accuracy of around 88%.
+
+The code for building the CNN model is inside a Jupyter Notebook. The notebook is located in <b>scripts/training_with_tf2.ipynb</b>
+
+## Dataset
+
+For the dataset, we scraped images from the internet of organic and recyclable waste. The dataset contains 22564 training set and 2513 validation set. The dataset can be accessed from [this link](https://www.kaggle.com/datasets/techsash/waste-classification-data)
+
+## Future Work
+
+1. <b>Dataset</b>: The dataset can be improved by adding more images pertaining to organic and recyclable materials and cleaning the current dataset. This will also help increase the accuracy of the model.
+
+2. <b>Webapp</b>: We intend to fine-tune the website by adding more features, improving UI, making the app more user friendly and more. Make it more responsive.
+
+3. <b>Image Classifier</b>: The current model is a basic model built on limited resources and time. We fully intend to increase complexity, include reinforced learning and improve accuracy.
